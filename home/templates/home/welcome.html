@@ -1,9 +1,7 @@
-<!DOCTYPE html>
-    <header>
-        <title>StickyNotes</title>
-    </header>
-    <body><h1>Welcome to StickyNotes!</h1>
-    <p>Today is {{today}}</p>
-    </body>
+{% extends "base.html" %}
 
-</html>
+{% block content %}
+    <h1>Welcome to StickyNotes!</h1>
+    <p>Today is {{today}}</p>
+    <a href="{% url 'notes.list' %}" class="btn btn-primary">Check out our sticky notes!</a>
+{% endblock %}
