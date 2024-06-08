@@ -5,5 +5,9 @@
 
 
 ul.errorlist {
-    display:none;
+    display:none
 }
+
+errorlist { display:none }
+
+ul li { display:none }

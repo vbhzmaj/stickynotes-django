@@ -5,7 +5,11 @@
     <h1 class="my-5">{{note.title}}</h1>
     </p class="my-5">{{note.content}}</p>
 </div>
-{% endblock %}
 
+<a href="{% url 'notes.list' %}" class="btn btn-secondary my-4">Back</a>
+<a href="{% url 'notes.update' pk=note.id%}" class="my-4 btn btn-secondary">Edit</a>
+<a href="{% url 'notes.delete' pk=note.id%}" class="my-4 btn btn-secondary">Delete</a>
+{% endblock %}
+ 
 
 
